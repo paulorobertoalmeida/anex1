@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #header {
+            border: 20px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            align-content: center;
+
+
+        }
+
+        .container-one {
+            background-color: rgb(59, 59, 99);
+            width: 100%;
+            display: flex;
+            padding:5px;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .box-1 {
+            background-color: red;
+            flex: 0 1 25%;
+        }
+
+        .box-2 {
+            background-color: red;
+            flex: 0 1 50%;
+        }
+
+        .box-3 {
+            background-color: red;
+            flex: 0 1 20%;
+
+        }
+
+        .container-two {
+            background-color: orange;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .box-4 {
+            background-color: yellow;
+            margin: 10px;
+            width: 100%;
+            align-content: center;
+        }
+
+        p {
+            align-content: center;
+            margin-left: 5px;
+        }
+
+        #section {
+            margin-top: 5px;
+            border: 20px solid black;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .big-box {
+            background-color: grey;
+            width: 75%;
+        }
+
+        .internal-section-1 {
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;            
+            justify-content: space-between;
+
+        }
+
+        .box-5,
+        .box-6,
+        .box-7,
+        .box-8 {
+            background-color: blue;
+            flex: 1 1 40%;
+            margin: 5px;
+        }
+
+        .internal-section-2 {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .box-9 {
+            background-color: teal;
+            flex: 1 1 90%;
+            margin: 5px;
+        }
+
+        .internal-section-3 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .little-box {
+            background-color: red;
+            width: 25%;
+            border-left: 20px solid black;
+         }
+
+        .box-10,
+        .box-11 {
+            background-color: yellow;
+            flex: 1 1 90%;
+            margin: 5px;
+        }
+
+        #footer {
+            margin-top: 5px;
+            padding: 2px;
+            border: 20px solid black;
+            background-color: orange;
+
+        }
+    </style>
+    <title>Level1</title>
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div class="container-one">
+            <div class="box-1">
+                <p>this is the Head</p>
+            </div>
+            <div class="box-2">
+                <p>this is the Head</p>
+            </div>
+            <div class="box-3">
+                <p>this is the Head</p>
+            </div>
+        </div>
+
+        <div class="container-two">
+            <div class="box-4">
+                <p>Still a Section</p>
+            </div>
+        </div>
+
+    </header>
+    <section id="section">
+        <div class="big-box">
+            <div class="internal-section-1">
+                <div class="box-5">
+                    <p>section</p>
+                </div>
+                <div class="box-6">
+                    <p>section</p>
+                </div>
+                <div class="box-7">
+                    <p>section</p>
+                </div>
+                <div class="box-8">
+                    <p>section</p>
+                </div>
+            </div>
+            <div class="internal-section-2">
+                <div class="box-9">
+                    <p>My Section</p>
+                </div>
+            </div>
+        </div>
+        <div class="little-box">
+            <div class="internal-section-3">
+                <div class="box-10">
+                    <p> other section</p>
+                </div>
+                <div class="box-11">
+                    <p>other section</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer">
+            <div class="footer-container">
+                <p>My Footer</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
